@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Navigate, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Login from './pages/Login';
 import Register from './pages/Register';
@@ -15,10 +15,12 @@ function PrivateRoute({ children }) {
   return getToken() ? children : <Navigate to="/login" />;
 }
 
-function App() {
+function AppLayout() {
+  const location = useLocation();
+  const isAuthPage = location.pathname === '/login' || location.pathname === '/register';
   return (
-    <Router>
-      <Navbar />
+    <>
+      {!isAuthPage && <Navbar />}
       <ToastNotifications />
       <Routes>
         <Route path="/login" element={<Login />} />
@@ -30,6 +32,14 @@ function App() {
         <Route path="/calendar" element={<PrivateRoute><Calendar /></PrivateRoute>} />
         <Route path="/settings" element={<PrivateRoute><Settings /></PrivateRoute>} />
       </Routes>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <AppLayout />
     </Router>
   );
 }

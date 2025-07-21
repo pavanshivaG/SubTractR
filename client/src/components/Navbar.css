@@ -1,0 +1,95 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1d1b1b;
+  padding: 0 2rem;
+  height: 64px;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+/* Center the nav links in the navbar */
+.navbar {
+  position: relative;
+}
+.navbar-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-icon {
+  background: #a259e6;
+  color: #fff;
+  font-weight: bold;
+  font-size: 2rem;
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar-links a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar-links a.active, .navbar-links a:hover {
+  background: #a259e6;
+  color: #fff;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.navbar-date {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #d1d5db;
+  font-size: 1rem;
+}
+.navbar-icon {
+  font-size: 1.3rem;
+  color: #d1d5db;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+.navbar-icon:hover {
+  color: #a259e6;
+} 

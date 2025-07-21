@@ -1,0 +1,106 @@
+.register-root {
+  min-height: 100vh;
+  background: linear-gradient(120deg, #181f2a 60%, #6d28d9 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register-card {
+  background: #23243a;
+  border-radius: 18px;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.18);
+  padding: 2.5rem 2.8rem 2.2rem 2.8rem;
+  min-width: 370px;
+  max-width: 400px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.register-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.register-form label {
+  font-weight: 600;
+  color: #e0e7ff;
+  margin-bottom: 0.2rem;
+}
+.register-form input[type="email"],
+.register-form input[type="password"],
+.register-form input[type="text"] {
+  padding: 0.9rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #374151;
+  font-size: 1.1rem;
+  background: #181f2a;
+  color: #fff;
+  outline: none;
+}
+.register-error {
+  color: #e11d48;
+  font-size: 0.98rem;
+  margin-top: -0.7rem;
+  margin-bottom: 0.2rem;
+}
+.register-password-row {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.register-showpass-btn {
+  background: none;
+  border: none;
+  color: #a259e6;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-left: -2.2rem;
+  z-index: 2;
+  outline: none;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.register-showpass-btn:focus {
+  outline: none;
+}
+.register-btn {
+  background: #a259e6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.9rem 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 0.7rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.register-btn:hover {
+  background: #7c3aed;
+}
+.register-login-row {
+  text-align: center;
+  margin-top: 0.7rem;
+  color: #c7d2fe;
+  font-size: 1.08rem;
+}
+.register-login-link {
+  color: #a259e6;
+  font-weight: 600;
+  margin-left: 0.3rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+.register-login-link:hover {
+  text-decoration: underline;
+} 

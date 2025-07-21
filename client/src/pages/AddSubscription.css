@@ -1,0 +1,99 @@
+.addsub-container {
+  padding: 2.5rem 2rem 2rem 2rem;
+  font-family: 'Inter', sans-serif;
+}
+.addsub-container h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.addsub-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  padding: 2.5rem 3rem 2rem 3rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.addsub-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.addsub-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.addsub-row {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 0.5rem;
+}
+.addsub-field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.addsub-field-full {
+  flex: 2;
+}
+.addsub-form label {
+  font-weight: 600;
+  color: #18181b;
+  margin-bottom: 0.2rem;
+}
+.addsub-form input,
+.addsub-form select,
+.addsub-form textarea {
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  font-size: 1.1rem;
+  background: #fafbfc;
+  outline: none;
+  resize: none;
+}
+.addsub-form textarea {
+  min-height: 60px;
+}
+.addsub-error {
+  color: #e11d48;
+  font-size: 0.95rem;
+  margin-top: 0.1rem;
+}
+.addsub-actions {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1.5rem;
+}
+.addsub-btn {
+  background: #a259e6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.addsub-btn:hover {
+  background: #7c3aed;
+}
+.addsub-cancel {
+  background: #f3f4f6;
+  color: #18181b;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.addsub-cancel:hover {
+  background: #e11d48;
+  color: #fff;
+} 

@@ -1,0 +1,133 @@
+.subs-container {
+  padding: 2.5rem 2rem 2rem 2rem;
+  font-family: 'Inter', sans-serif;
+}
+.subs-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.subs-header-row h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.subs-add-btn {
+  background: #a259e6;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 0.7rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.subs-add-btn:hover {
+  background: #7c3aed;
+}
+.subs-search-row {
+  margin-bottom: 2rem;
+}
+.subs-search {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 1.1rem;
+  background: #fafbfc;
+  outline: none;
+}
+.subs-list {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.subs-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  padding: 1.2rem 2rem;
+  gap: 2rem;
+}
+.subs-card-left {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.subs-avatar {
+  width: 48px;
+  height: 48px;
+  background: #ede9fe;
+  color: #a259e6;
+  font-size: 1.7rem;
+  font-weight: 700;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.subs-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #18181b;
+}
+.subs-renewal {
+  color: #6b7280;
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+.subs-card-right {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+.subs-category {
+  background: #ede9fe;
+  color: #a259e6;
+  border-radius: 8px;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-right: 0.7rem;
+}
+.subs-category-productivity {
+  background: #dbeafe;
+  color: #2563eb;
+}
+.subs-amount {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #18181b;
+  margin-right: 0.2rem;
+}
+.subs-amount-label {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin-right: 1.2rem;
+}
+.subs-action-btn {
+  background: #f3f4f6;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  font-size: 1.1rem;
+  color: #18181b;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.subs-action-btn:hover {
+  background: #a259e6;
+  color: #fff;
+}
+.subs-delete {
+  color: #e11d48;
+}
+.subs-delete:hover {
+  background: #e11d48;
+  color: #fff;
+} 

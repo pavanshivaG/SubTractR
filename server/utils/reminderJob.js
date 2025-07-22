@@ -11,7 +11,7 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-cron.schedule('0 8 * * *', async () => {
+cron.schedule('0 12 * * *', async () => {
   const now = new Date();
   const in3Days = new Date(now.getTime() + 3 * 24 * 60 * 60 * 1000);
   const subs = await Subscription.find({
@@ -25,7 +25,7 @@ cron.schedule('0 8 * * *', async () => {
       from: process.env.EMAIL_USER,
       to: user.email,
       subject: `Upcoming renewal: ${sub.name}`,
-      text: `Your subscription for ${sub.name} renews on ${sub.renewalDate.toDateString()}.`,
+      text: `Hope you’re enjoying your favorite content on ${sub.name}\nQuick heads-up: your subscription will renew on ${sub.renewalDate.toDateString()} for $${sub.amount}.\nIf you wish to make any changes or need to cancel, please do so before the renewal date. Thank you for using SubTractr!`,
     });
   }
 }); 

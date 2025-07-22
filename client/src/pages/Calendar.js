@@ -4,7 +4,7 @@ import './Calendar.css';
 
 function CalendarPage() {
   const [subs, setSubs] = useState([]);
-  const [month, setMonth] = useState(() => {
+  const [month] = useState(() => {
     const d = new Date();
     return new Date(d.getFullYear(), d.getMonth(), 1);
   });

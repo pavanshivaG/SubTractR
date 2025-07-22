@@ -6,7 +6,7 @@ function Settings() {
   const [budget, setBudget] = useState(() => localStorage.getItem('budget') || '');
   const [currency, setCurrency] = useState('USD ($)');
   const [emailReminders, setEmailReminders] = useState(true);
-  const [reminderDays, setReminderDays] = useState('3');
+  const [reminderDays] = useState('3');
   const [dark, setDark] = useState(() => localStorage.getItem('darkMode') === 'true');
 
   useEffect(() => {
